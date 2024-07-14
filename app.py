@@ -1,8 +1,7 @@
 import streamlit as st
 import pandas as pd
 from sqlalchemy import create_engine
-import env
-import os
+
 # Verbindung zur PostgreSQL-Datenbank herstellen
 def get_data():
     database_url = st.secrets["database_url"]
